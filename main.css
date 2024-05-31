@@ -7,56 +7,56 @@
 
 
 .container {
-    max-width: 1024px;
+ 
+    display: flex;
     width: 100%;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items:center;
+    padding: 25px;
+    background-color: #182c61;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    font-weight: bold; 
+
 }
 
 
 h1{
 font-size: 60px;
+margin-left: 30px;
 }
 
-header {
-    padding: 15px 0;
-    background-color: #182c61;
-    color: #ecf0f1;
-    text-transform: uppercase;
-    font-weight: bold;  
+
+
+
+header nav ul {
+
+    display: inline;
+    list-style: none;
+    padding: 40px;
+ 
 }
 
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    margin-left: 90px;
-}
-
-header nav li a {
+header nav  li a {
     color: #ecf0f1;
     text-decoration: none;
-  
-    
-}
-
-header nav li {
-    display: inline;
-    margin-left: 10px;
     font-size: 18px;
+    margin-right: 20px;
 }
 
 
 #sobre-a-loja img{
-    max-width: 500px;
-    margin-right: 24px;
+    max-width: 30em;
+    margin-right: 80px;
     margin-top: 24px;
-    margin-left: 90px;
+    margin-left: 45px;
 }
 
 
  .container-flex{
     display: flex;
     justify-content: space-between;
+    margin-right: 70px;
    
 }
 
@@ -87,9 +87,8 @@ h3{
 
 
 .lista-pet{
-    flex-wrap: wrap;
-    margin-left: 15px;
-    margin-right: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 .lista-pet li {
@@ -100,8 +99,9 @@ h3{
 }
     
 .lista-pet li img{
-    max-width:290px;
-   margin: 10px 10px;
+    float: left;
+    max-width:100%;
+    
 }
 
 .lista-pet li h4{
@@ -116,12 +116,12 @@ h3{
 .lista-pet {
     display: grid;
     grid-template-columns:  repeat(4, 24.25%);
-    column-gap: 1%;
+    gap: 1%;
     
    
 }
 
-    button{
+     button {
         margin-top: 20px;
         font-style: italic;
         margin-bottom: 30px;
@@ -131,7 +131,7 @@ h3{
         margin-left: 10px;
     }
 
-    .container-last{
+     .container-last{
          margin-top: 30px;
         padding: 10px;
         background-color: #182c61;
@@ -189,7 +189,7 @@ h3{
 
     @media screen and (min-width: 641px) and (max-width:1023px) {
         .container {
-            max-width: 90%;
+            max-width: 100%;
     }
 
     .header nav li {
